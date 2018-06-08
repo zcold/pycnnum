@@ -2,7 +2,7 @@
 
 Chinese number &lt;-> Arabic number conversion
 
-# Thanks to 
+## Thanks to 
 
 https://github.com/GoodERPJeff for precision issue report and fix.
 
