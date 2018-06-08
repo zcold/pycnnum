@@ -2,6 +2,10 @@
 
 Chinese number &lt;-> Arabic number conversion
 
+# Thanks to 
+
+https://github.com/GoodERPJeff for precision issue report and fix.
+
 ## Constants
 
 `NUMBERING_TYPES = ['low', 'mid', 'high']`: Chinese numbering type.
