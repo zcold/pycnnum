@@ -1,0 +1,26 @@
+{
+    "jupyter.jupyterServerType": "local",
+    "python.linting.pylintEnabled": false,
+    "python.linting.mypyEnabled": true,
+    "python.linting.enabled": true,
+    "python.testing.pytestArgs": [
+        "pycnnum",
+        "--doctest-modules",
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "cSpell.words": [
+        "liang",
+        "pycnnum"
+    ],
+    "saveAndRunExt": {
+        "commands": [
+            {
+                "match": "pycnnum.py",
+                "isShellCommand" : true,
+                "cmd": "python ci.py"
+            }
+        ]
+    }
+}

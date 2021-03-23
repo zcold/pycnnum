@@ -1,6 +1,8 @@
-name = 'pycnnum'
+"""Chinese number <=> int/float conversion methods
 
-try:
-    from pycnnum import cn2num, num2cn
-except ImportError:
-    from .pycnnum import cn2num, num2cn
+.. include:: ../README.md
+"""
+
+from .pycnnum import *
+
+__all__ = ["cn2num", "num2cn"]
