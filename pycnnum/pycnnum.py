@@ -683,7 +683,7 @@ def cn2num(
 
 
 def num2cn(
-    num: Tuple[int, float, str],
+    num: Union[int, float, str],
     numbering_type: str = NUMBERING_TYPES[1],
     capitalize: bool = False,
     traditional: bool = False,
@@ -813,8 +813,10 @@ def num2cn(
         attr_name = "capital_" + attr_name
 
     # remove leading '一' for '十', e.g. 一十六 to 十六
-    if (result_symbols[0] == system.digits[1]) and (
-        getattr(result_symbols[1], "power", None) == 1
+    if (
+        len(result_symbols) > 1
+        and (result_symbols[0] == system.digits[1])
+        and (getattr(result_symbols[1], "power", None) == 1)
     ):
         result_symbols = result_symbols[1:]
 
